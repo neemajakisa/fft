@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     # Directories
     parser.add_argument('--model_name', default='fftformer', type=str)
-    parser.add_argument('--data_dir', type=str, default='/media/kls/新加卷1/CVPR_2023/GoPro_test/')
+    parser.add_argument('--data_dir', type=str, default='/home/data/coco/FE/train2017')
 
     # Test
     parser.add_argument('--test_model', type=str, default='./pretrain_model/fftformer_GoPro.pth')
