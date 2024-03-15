@@ -115,13 +115,13 @@ if __name__ == '__main__':
 
     # Directories
     parser.add_argument('--model_name', default='fftformer', type=str)
-    parser.add_argument('--data_dir', type=str, default='/home/data/coco/FE/train2017')
+    parser.add_argument('--data_dir', type=str, default='/home/data/coco/FE/test')
 
     # Test
     parser.add_argument('--test_model', type=str, default='./pretrain_model/fftformer_GoPro.pth')
     parser.add_argument('--save_image', type=bool, default=True, choices=[True, False])
 
     args = parser.parse_args()
-    args.result_dir = os.path.join('/home/data/results/', args.model_name, 'GoPro/')
+    args.result_dir = os.path.join('/home/data/results_test/', args.model_name, 'GoPro/')
     print(args)
     main(args)
